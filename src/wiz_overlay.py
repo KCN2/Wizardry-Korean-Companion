@@ -308,8 +308,10 @@ def _explored_path(game=1):
     return os.path.join(_app_dir(), f"wiz{game}_explored.json")
 
 
-_SETTINGS_FILE = "wiz1_overlay_settings.json"
-_DOSBOX_CONF_FILE = "wiz1_dosbox.conf"
+_SETTINGS_FILE = "wiz_overlay_settings.json"
+_DOSBOX_CONF_FILE = "wiz_dosbox.conf"
+# Names before 1.1 (the program once covered only Wizardry 1).
+_OLD_SETTINGS_FILE, _OLD_DOSBOX_CONF_FILE = "wiz1_overlay_settings.json", "wiz1_dosbox.conf"
 # Written on every launch and passed after -userconf, so these win over the
 # user's own DOSBox settings. desktop: the monitor mode does not change (an
 # original-size fullscreen switched the desktop to 640x480 and moved every
@@ -1081,6 +1083,12 @@ def _lost_bodies(wiz_dir, game=1):
 
 
 def _load_settings():
+    old, new = (os.path.join(_app_dir(), n) for n in (_OLD_SETTINGS_FILE, _SETTINGS_FILE))
+    if os.path.exists(old) and not os.path.exists(new):
+        try:
+            os.replace(old, new)   # keep the user's paths and window places
+        except OSError:
+            pass
     try:
         with open(os.path.join(_app_dir(), _SETTINGS_FILE), encoding="utf-8") as f:
             data = json.load(f)
@@ -2195,6 +2203,10 @@ class WizardryDualApp:
             return
         self._save_launch_settings()
         conf = os.path.join(_app_dir(), _DOSBOX_CONF_FILE)
+        try:
+            os.remove(os.path.join(_app_dir(), _OLD_DOSBOX_CONF_FILE))   # written fresh on every launch
+        except OSError:
+            pass
         env = dict(os.environ)
         pos = _load_settings().get("dosbox_pos")
         if (isinstance(pos, list) and len(pos) == 2 and all(isinstance(v, int) for v in pos)
@@ -2590,7 +2602,8 @@ class WizardryDualApp:
         self.btn_stat.config(
             text="스탯 보호: 켜짐" if on else "스탯 보호: 꺼짐",
             fg="#a6e3a1" if on else "#f38ba8",
-            state=tk.DISABLED if self._current_game() == 5 else tk.NORMAL,
+            # Party records are read for 1-3 only (4: Werdna alone, 5: record layout of stats unknown).
+            state=tk.DISABLED if self._current_game() in (4, 5) else tk.NORMAL,
         )
 
     def _ui_k(self):

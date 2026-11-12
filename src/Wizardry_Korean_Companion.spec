@@ -28,7 +28,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='Wiz1_Korean_Overlay',
+    name='Wizardry_Korean_Companion',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

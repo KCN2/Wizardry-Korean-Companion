@@ -11,12 +11,12 @@ build/
 *.mp4
 /src/release-build/
 /src/release/
-wiz1_explored.json
+wiz*_explored.json
 wiz2_explored.json
 wiz_overlay_error.log
 wiz_monster_dump.bin
-wiz1_overlay_settings.json
-wiz1_dosbox.conf
+wiz*_overlay_settings.json
+wiz*_dosbox.conf
 logs/
 reference/
 # Development files (research notes, decoded game text, tests, helper scripts) stay

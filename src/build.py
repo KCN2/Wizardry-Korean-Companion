@@ -1,7 +1,7 @@
 r"""
-build.py - Wiz1_Korean_Overlay PyInstaller build.
+build.py - Wizardry_Korean_Companion PyInstaller build.
 
-    python build.py            developer exe -> dist\Wiz1_Korean_Overlay.exe
+    python build.py            developer exe -> dist\Wizardry_Korean_Companion.exe
     python build.py --release  release exe   -> dist\release\ (exe + README + font license)
 
 The release build sets wiz_build_flags.RELEASE = True while it builds, so the
@@ -25,7 +25,7 @@ RELEASE_DOCS = os.path.join(base_dir, 'docs', 'release')
 
 
 def build(release):
-    spec_path = os.path.join(base_dir, 'Wiz1_Korean_Overlay.spec')
+    spec_path = os.path.join(base_dir, 'Wizardry_Korean_Companion.spec')
     args = [spec_path, '--noconfirm']
     if release:
         args += ['--distpath', os.path.join(base_dir, 'dist', 'release'),
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     out = os.path.join(base_dir, 'dist', 'release')
     # A test run of the release exe leaves its settings (local paths) and map
     # records here; the package holds only the exe and the release documents.
-    keep = {'Wiz1_Korean_Overlay.exe', *os.listdir(RELEASE_DOCS)}
+    keep = {'Wizardry_Korean_Companion.exe', *os.listdir(RELEASE_DOCS)}
     for name in os.listdir(out):
         path = os.path.join(out, name)
         if name not in keep and os.path.isfile(path):
