@@ -578,6 +578,8 @@ class Wizardry1State:
         against the screen of the live party). Only IDENTIFIED is written.
         Returns the names with something identified.
         """
+        if self.game == 5:
+            return self._identify_party_wiz5(notes)
         if self.game not in (1, 2, 3):
             return []
         done = []
@@ -594,6 +596,31 @@ class Wizardry1State:
                 identified = int.from_bytes(entry[4:6], 'little')
                 if identified == 0 and int.from_bytes(entry[6:8], 'little') != 0:
                     if self.hook.write_bytes(addr + 0x3C + 8 * i + 4, (1).to_bytes(2, 'little')):
+                        changed += 1
+            if changed:
+                done.append(name)
+        return done
+
+    def _identify_party_wiz5(self, notes=None):
+        """Wizardry 5 record (246 bytes): POSSCNT at +0x3A, then 4-byte entries
+        from +0x3C (item number, flag word). Flag bit 1 is identified, bit 2
+        cursed: the shop's "THAT HAS BEEN IDENTIFIED" / "NOT A CURSED ITEM"
+        tests (SHOPS proc 27) and the bishop's identify (CAMP proc 53).
+        Only bit 1 is set."""
+        done = []
+        for addr, name, status, hp, hp_max in self._party_records(notes):
+            head = self.hook.read_bytes(addr + 0x3A, 2 + 4 * 8)
+            if not head or len(head) < 34:
+                continue
+            count = int.from_bytes(head[0:2], 'little')
+            if not 1 <= count <= 8:
+                continue
+            changed = 0
+            for i in range(count):
+                item = int.from_bytes(head[2 + 4 * i:4 + 4 * i], 'little')
+                flags = int.from_bytes(head[4 + 4 * i:6 + 4 * i], 'little')
+                if item and not flags & 2:
+                    if self.hook.write_bytes(addr + 0x3C + 4 * i + 2, (flags | 2).to_bytes(2, 'little')):
                         changed += 1
             if changed:
                 done.append(name)

@@ -6703,7 +6703,7 @@ class WizardryDualApp:
         self._sync_roll_labels()
         for btn in (getattr(self, 'btn_heal', None), getattr(self, 'btn_revive', None), getattr(self, 'btn_identify', None)):
             if btn is not None:
-                want = tk.NORMAL if in_town and (btn is not getattr(self, 'btn_identify', None) or self.state.game in (1, 2, 3)) else tk.DISABLED
+                want = tk.NORMAL if in_town and (btn is not getattr(self, 'btn_identify', None) or self.state.game in (1, 2, 3, 5)) else tk.DISABLED
                 if str(btn.cget('state')) != want:
                     btn.config(state=want)
         logs = self.state.stat_protection_logs
