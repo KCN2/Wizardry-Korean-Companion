@@ -1,5 +1,5 @@
-Wizardry Korean Companion 1.0
-=============================
+Wizardry Korean Companion 1.0.1
+===============================
 
 위저드리 한글 오버레이·컴패니언
 
