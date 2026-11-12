@@ -20,7 +20,25 @@
 
 - Windows 10/11
 - [DOSBox 0.74-3](https://www.dosbox.com/)
-- 정품 PC판 위저드리 1~5편 게임 파일 (`WIZ1.COM`, `WIZ1.DSK` 등)
+- 위저드리 1~5편 게임 파일: **Ultimate Wizardry Archives**(Interplay, 1998) 판본만 지원합니다. 아래 "필요한 게임 판본"을 보세요.
+
+## 필요한 게임 판본
+
+위저드리 1~5편은 지금 GOG나 Steam에서 원작 그대로 팔지 않고, 나온 판본마다 파일과 메모리 배치가 다릅니다.
+이 프로그램은 **Interplay가 1998년에 낸 합본 CD-ROM *Ultimate Wizardry Archives*에 실린 1~5편 도스판**을 기준으로 만들었습니다.
+게임 메모리와 디스크 형식을 그 판본에 맞춰 읽습니다. 다른 판본(애플 II판, 패미컴·PC-98 등 일본판, 따로 발매된 도스판, 리메이크)은 확인하지 않았고, 배치가 달라 번역과 지도가 동작하지 않을 가능성이 높습니다.
+
+위저드리 폴더에 아래 파일이 한곳에 있으면 맞는 판본입니다.
+
+| 편 | 실행 파일 | 시나리오 디스크 (크기) |
+|---|---|---|
+| 1편 Proving Grounds of the Mad Overlord | `WIZ1.COM` | `WIZ1.DSK` (327,680바이트) |
+| 2편 The Knight of Diamonds | `WIZ2.COM` | `WIZ2.DSK` (327,680바이트) |
+| 3편 Legacy of Llylgamyn | `WIZ3.COM` | `WIZ3.DSK` (327,680바이트) |
+| 4편 The Return of Werdna | `WIZ4.COM` | `WIZ4.DSK` (327,680바이트) |
+| 5편 Heart of the Maelstrom | `WIZ5.COM` | `WIZ5.DSK` (655,360바이트) |
+
+게임을 저장하면 같은 폴더에 `SAVE1.DSK`~`SAVE5.DSK`가 생깁니다. 이 프로그램은 게임 파일을 배포하지 않으며, 구하는 곳도 안내하지 않습니다.
 
 ## 설치와 실행
 
@@ -31,7 +49,7 @@
 4. 몇 편을 할지 고르고 **게임 실행**을 누르면 DOSBox가 큰 창으로 뜨고 자동으로 연결됩니다.
 5. **오버레이** 버튼을 누르면 게임 화면 위에 한글이 나옵니다. 다시 누르면 컴패니언으로 돌아갑니다.
 
-처음 실행하면 exe 옆에 설정 파일(`wiz_overlay_settings.json`, `wiz_dosbox.conf`)과 탐험 기록(`wiz1_explored.json`)이 생깁니다.
+처음 실행하면 exe 옆에 설정 파일(`wiz_overlay_settings.json`, `wiz_dosbox.conf`)과 편별 탐험 기록(`wiz1_explored.json`~`wiz5_explored.json`)이 생깁니다.
 
 ## 단축키
 
