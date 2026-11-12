@@ -1,0 +1,29 @@
+.build-tools/
+.venv/
+venv/
+__pycache__/
+dist/
+build/
+*.exe
+*.zip
+*.iso
+*.dsk
+*.mp4
+/release-build/
+/release/
+wiz1_explored.json
+wiz2_explored.json
+wiz_overlay_error.log
+wiz_monster_dump.bin
+wiz1_overlay_settings.json
+wiz1_dosbox.conf
+logs/
+reference/
+# Development files (research notes, decoded game text, tests, helper scripts) stay
+# local. Kept: the release documents and the two decoders the program imports.
+docs/*
+!docs/release/
+tools/*
+!tools/wiz_krn_decode.py
+!tools/wiz4_krn_decode.py
+dict_src/

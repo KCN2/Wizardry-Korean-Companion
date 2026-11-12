@@ -1,0 +1,31 @@
+이 프로그램(Wiz1_Korean_Overlay.exe)에 함께 묶인 오픈소스 구성 요소
+=====================================================================
+
+exe는 PyInstaller로 만든 하나의 실행 파일이며, 아래 구성 요소가 그 안에 들어 있습니다.
+각 구성 요소의 저작권과 라이선스는 해당 저작권자에게 있습니다. 전문은 각 링크에 있습니다.
+
+Python 3.13
+  Copyright (c) 2001 Python Software Foundation. All rights reserved.
+  Python Software Foundation License Version 2
+  https://docs.python.org/3/license.html
+
+Tcl/Tk 8.6 (Python의 tkinter가 사용)
+  Copyright (c) Regents of the University of California, Sun Microsystems, Inc.,
+  Scriptics Corporation, ActiveState Corporation and other parties.
+  Tcl/Tk License (BSD 계열)
+  https://www.tcl-lang.org/software/tcltk/license.html
+
+Pillow 12
+  Copyright (c) 1997-2011 by Secret Labs AB, (c) 1995-2011 by Fredrik Lundh and contributors,
+  (c) 2010 by Jeffrey A. Clark and contributors.
+  MIT-CMU License
+  https://github.com/python-pillow/Pillow/blob/main/LICENSE
+
+PyInstaller 6 (실행 파일을 여는 부트로더)
+  Copyright (c) 2010-2025, PyInstaller Development Team.
+  GNU General Public License v2 with the PyInstaller bootloader exception:
+  PyInstaller로 만든 실행 파일은 원하는 라이선스로 배포할 수 있습니다.
+  https://github.com/pyinstaller/pyinstaller/blob/develop/COPYING.txt
+
+Neo둥근모 (NeoDunggeunmo) 글꼴
+  SIL Open Font License 1.1. 전문은 NeoDunggeunmo_LICENSE.txt에 있습니다.

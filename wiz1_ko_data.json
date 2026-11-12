@@ -1,0 +1,1329 @@
+{
+  "monsters": {
+    "BUBBLY SLIME": {
+      "ko": "버블리 슬라임"
+    },
+    "ORC": {
+      "ko": "오크"
+    },
+    "KOBOLD": {
+      "ko": "코볼트"
+    },
+    "ROGUE": {
+      "ko": "로그 (무뢰한)"
+    },
+    "BUSHWACKER": {
+      "ko": "부시래커 (산적)"
+    },
+    "ZOMBIE": {
+      "ko": "좀비"
+    },
+    "SKELETON": {
+      "ko": "스켈레톤",
+      "danger": "낮음"
+    },
+    "GAS CLOUD": {
+      "ko": "가스 클라우드"
+    },
+    "UNDEAD KOBOLD": {
+      "ko": "언데드 코볼트"
+    },
+    "LVL 1 MAGE": {
+      "ko": "1레벨 마법사"
+    },
+    "LVL 1 PRIEST": {
+      "ko": "1레벨 사제"
+    },
+    "CREEPING COIN": {
+      "ko": "크리핑 코인"
+    },
+    "MURPHY'S GHOST": {
+      "ko": "머피의 유령"
+    },
+    "ROTTING CORPSE": {
+      "ko": "썩은 시체"
+    },
+    "VORPAL BUNNY": {
+      "ko": "보팔 버니"
+    },
+    "GIANT TOAD": {
+      "ko": "거대 두꺼비"
+    },
+    "HIGHWAYMAN": {
+      "ko": "하이웨이맨 (노상강도)"
+    },
+    "GARGOYLE": {
+      "ko": "가고일"
+    },
+    "DRAGON FLY": {
+      "ko": "드래곤 플라이"
+    },
+    "VAMPIRE": {
+      "ko": "뱀파이어 (흡혈귀)"
+    },
+    "GREATER DEMON": {
+      "ko": "그레이터 데몬 (상급 악마)"
+    },
+    "FLACK": {
+      "ko": "플랙"
+    },
+    "HIGH NINJA": {
+      "ko": "하이 닌자"
+    },
+    "HATAMOTO": {
+      "ko": "하타모토"
+    },
+    "WERDNA": {
+      "ko": "베르드나"
+    },
+    "CREEPING CRUD": {
+      "ko": "크리핑 크루드"
+    },
+    "LEVEL 1 MAGE": {
+      "ko": "1레벨 마법사"
+    },
+    "LEVEL 1 PRIEST": {
+      "ko": "1레벨 사제"
+    },
+    "LEVEL 1 NINJA": {
+      "ko": "1레벨 닌자"
+    },
+    "LVL 1 NINJA": {
+      "ko": "1레벨 닌자"
+    },
+    "CAPYBARA": {
+      "ko": "카피바라"
+    },
+    "COYOTE": {
+      "ko": "코요테"
+    },
+    "LEVEL 3 PRIEST": {
+      "ko": "3레벨 사제"
+    },
+    "LVL 3 PRIEST": {
+      "ko": "3레벨 사제"
+    },
+    "LEVEL 3 SAMURAI": {
+      "ko": "3레벨 사무라이"
+    },
+    "LVL 3 SAMURAI": {
+      "ko": "3레벨 사무라이"
+    },
+    "LEVEL 3 NINJA": {
+      "ko": "3레벨 닌자"
+    },
+    "LVL 3 NINJA": {
+      "ko": "3레벨 닌자"
+    },
+    "WERE BEAR": {
+      "ko": "웨어 베어 (곰인간)"
+    },
+    "OGRE": {
+      "ko": "오거"
+    },
+    "HUGE SPIDER": {
+      "ko": "거대 거미"
+    },
+    "BORING BEETLE": {
+      "ko": "보링 비틀 (딱정벌레)"
+    },
+    "GAS DRAGON": {
+      "ko": "가스 드래곤"
+    },
+    "PRIESTESS": {
+      "ko": "여사제"
+    },
+    "SWORDSMAN": {
+      "ko": "검사"
+    },
+    "ATTACK DOG": {
+      "ko": "군견"
+    },
+    "GRAVE MIST": {
+      "ko": "그레이브 미스트"
+    },
+    "DRAGON PUPPY": {
+      "ko": "드래곤 퍼피 (새끼용)"
+    },
+    "WERE WOLF": {
+      "ko": "웨어 울프 (늑대인간)"
+    },
+    "SHADE": {
+      "ko": "셰이드 (그림자)"
+    },
+    "BISHOP": {
+      "ko": "비숍"
+    },
+    "MINOR DAIMYO": {
+      "ko": "소 다이묘"
+    },
+    "LEVEL 5 MAGE": {
+      "ko": "5레벨 마법사"
+    },
+    "LVL 5 MAGE": {
+      "ko": "5레벨 마법사"
+    },
+    "LEVEL 4 THIEF": {
+      "ko": "4레벨 도적"
+    },
+    "LVL 4 THIEF": {
+      "ko": "4레벨 도적"
+    },
+    "KILLER WOLF": {
+      "ko": "킬러 울프"
+    },
+    "SPIRIT": {
+      "ko": "스피릿 (영혼)"
+    },
+    "GIANT SPIDER": {
+      "ko": "자이언트 스파이더"
+    },
+    "MEDUSALIZARD": {
+      "ko": "메두사 리자드"
+    },
+    "LEVEL 5 PRIEST": {
+      "ko": "5레벨 사제"
+    },
+    "LVL 5 PRIEST": {
+      "ko": "5레벨 사제"
+    },
+    "LEVEL 6 NINJA": {
+      "ko": "6레벨 닌자"
+    },
+    "LVL 6 NINJA": {
+      "ko": "6레벨 닌자"
+    },
+    "LEVEL 7 MAGE": {
+      "ko": "7레벨 마법사"
+    },
+    "LVL 7 MAGE": {
+      "ko": "7레벨 마법사"
+    },
+    "MASTER THIEF": {
+      "ko": "마스터 도적"
+    },
+    "MAJOR DAIMYO": {
+      "ko": "대 다이묘"
+    },
+    "HIGH PRIEST": {
+      "ko": "대사제"
+    },
+    "CHAMP SAMURAI": {
+      "ko": "챔프 사무라이"
+    },
+    "ARCH MAGE": {
+      "ko": "아치 메이지 (대마법사)"
+    },
+    "GAZE HOUND": {
+      "ko": "게이즈 하운드"
+    },
+    "OGRE LORD": {
+      "ko": "오거 로드"
+    },
+    "TROLL": {
+      "ko": "트롤"
+    },
+    "LIFESTEALER": {
+      "ko": "라이프스틸러"
+    },
+    "NIGHTSTALKER": {
+      "ko": "나이트스토커"
+    },
+    "WYVERN": {
+      "ko": "와이번"
+    },
+    "LEVEL 8 PRIEST": {
+      "ko": "8레벨 사제"
+    },
+    "LVL 8 PRIEST": {
+      "ko": "8레벨 사제"
+    },
+    "LEVEL 10 FIGHTER": {
+      "ko": "10레벨 전사"
+    },
+    "LVL 10 FIGHTER": {
+      "ko": "10레벨 전사"
+    },
+    "LEVEL 7 THIEF": {
+      "ko": "7레벨 도적"
+    },
+    "LVL 7 THIEF": {
+      "ko": "7레벨 도적"
+    },
+    "LEVEL 8 NINJA": {
+      "ko": "8레벨 닌자"
+    },
+    "LVL 8 NINJA": {
+      "ko": "8레벨 닌자"
+    },
+    "EARTH GIANT": {
+      "ko": "어스 자이언트 (대지 거인)"
+    },
+    "LESSER DEMON": {
+      "ko": "레서 데몬 (하급 악마)"
+    },
+    "CHIMERA": {
+      "ko": "키메라"
+    },
+    "FIRE GIANT": {
+      "ko": "파이어 자이언트 (화염 거인)"
+    },
+    "GORGON": {
+      "ko": "고르곤"
+    },
+    "LEVEL 8 BISHOP": {
+      "ko": "8레벨 비숍"
+    },
+    "LVL 8 BISHOP": {
+      "ko": "8레벨 비숍"
+    },
+    "LEVEL 8 FIGHTER": {
+      "ko": "8레벨 전사"
+    },
+    "LVL 8 FIGHTER": {
+      "ko": "8레벨 전사"
+    },
+    "LEVEL 10 MAGE": {
+      "ko": "10레벨 마법사"
+    },
+    "LVL 10 MAGE": {
+      "ko": "10레벨 마법사"
+    },
+    "THIEF": {
+      "ko": "도적"
+    },
+    "MASTER NINJA": {
+      "ko": "마스터 닌자"
+    },
+    "WILL O' WISP": {
+      "ko": "윌 오 위스프"
+    },
+    "BLEEB": {
+      "ko": "블리브"
+    },
+    "FROST GIANT": {
+      "ko": "프로스트 자이언트 (빙결 거인)"
+    },
+    "FIRE DRAGON": {
+      "ko": "파이어 드래곤 (화염용)"
+    },
+    "HIGH WIZARD": {
+      "ko": "대위저드"
+    },
+    "POISON GIANT": {
+      "ko": "포이즌 자이언트 (맹독 거인)"
+    },
+    "DRAGON ZOMBIE": {
+      "ko": "드래곤 좀비"
+    },
+    "RAVER LORD": {
+      "ko": "레이버 로드"
+    },
+    "THE HIGH MASTER": {
+      "ko": "하이 마스터"
+    },
+    "HIGH MASTER": {
+      "ko": "하이 마스터"
+    },
+    "MAELIFIC": {
+      "ko": "말리픽"
+    },
+    "VAMPIRE LORD": {
+      "ko": "뱀파이어 로드"
+    },
+    "LEVEL 7 FIGHTER": {
+      "ko": "7레벨 전사"
+    },
+    "LVL 7 FIGHTER": {
+      "ko": "7레벨 전사"
+    },
+    "AMPHIBIAN": {
+      "ko": "양서류"
+    },
+    "AMPHIBIANS": {
+      "ko": "양서류"
+    },
+    "BEAR": {
+      "ko": "곰"
+    },
+    "BEARS": {
+      "ko": "곰"
+    },
+    "CONEHEAD": {
+      "ko": "원뿔머리"
+    },
+    "CONEHEADS": {
+      "ko": "원뿔머리"
+    },
+    "DEMON": {
+      "ko": "악마"
+    },
+    "DEMONS": {
+      "ko": "악마"
+    },
+    "DRAGON": {
+      "ko": "드래곤"
+    },
+    "DRAGONS": {
+      "ko": "드래곤"
+    },
+    "FLY": {
+      "ko": "날벌레"
+    },
+    "FLIES": {
+      "ko": "날벌레"
+    },
+    "GIANT": {
+      "ko": "거인"
+    },
+    "GIANTS": {
+      "ko": "거인"
+    },
+    "GIANT RODENT": {
+      "ko": "거대 설치류"
+    },
+    "GIANT RODENTS": {
+      "ko": "거대 설치류"
+    },
+    "INSECT": {
+      "ko": "곤충"
+    },
+    "INSECTS": {
+      "ko": "곤충"
+    },
+    "MAN IN ARMOR": {
+      "ko": "갑옷 입은 남자"
+    },
+    "MEN IN ARMOR": {
+      "ko": "갑옷 입은 남자들"
+    },
+    "MAN IN BLACK": {
+      "ko": "검은 옷의 남자"
+    },
+    "MEN IN BLACK": {
+      "ko": "검은 옷의 남자들"
+    },
+    "MAN IN CHAIN": {
+      "ko": "사슬 갑옷의 남자"
+    },
+    "MEN IN CHAIN": {
+      "ko": "사슬 갑옷의 남자들"
+    },
+    "MAN IN KIMONO": {
+      "ko": "기모노 차림의 남자"
+    },
+    "MEN IN KIMONOS": {
+      "ko": "기모노 차림의 남자들"
+    },
+    "MAN IN LEATHER": {
+      "ko": "가죽옷 입은 남자"
+    },
+    "MEN IN LEATHER": {
+      "ko": "가죽옷 입은 남자들"
+    },
+    "MAN IN ROBE": {
+      "ko": "로브 입은 남자"
+    },
+    "MANGY DOG": {
+      "ko": "비루먹은 개"
+    },
+    "MANGY DOGS": {
+      "ko": "비루먹은 개"
+    },
+    "MONK": {
+      "ko": "수도승"
+    },
+    "MONKS": {
+      "ko": "수도승"
+    },
+    "PRIESTS": {
+      "ko": "사제"
+    },
+    "RABBIT": {
+      "ko": "토끼"
+    },
+    "RABBITS": {
+      "ko": "토끼"
+    },
+    "SMALL OBJECT": {
+      "ko": "작은 물체"
+    },
+    "SMALL OBJECTS": {
+      "ko": "작은 물체"
+    },
+    "STRANGE ANIMAL": {
+      "ko": "이상한 동물"
+    },
+    "STRANGE ANIMALS": {
+      "ko": "이상한 동물"
+    },
+    "UNSEEN BEING": {
+      "ko": "보이지 않는 것"
+    },
+    "UNSEEN BEINGS": {
+      "ko": "보이지 않는 것"
+    },
+    "UNSEEN ENTITIES": {
+      "ko": "보이지 않는 존재"
+    },
+    "UNSEEN ENTITYS": {
+      "ko": "보이지 않는 존재"
+    },
+    "WOLF": {
+      "ko": "늑대"
+    },
+    "WOLVES": {
+      "ko": "늑대"
+    },
+    "HIGHWAYMEN": {
+      "ko": "하이웨이맨 (노상강도)"
+    },
+    "VORPAL BUNNIES": {
+      "ko": "보팔 버니"
+    },
+    "DRAGON FLIES": {
+      "ko": "드래곤 플라이"
+    },
+    "WERERAT": {
+      "ko": "웨어 랫 (쥐인간)"
+    },
+    "WERERATS": {
+      "ko": "웨어 랫 (쥐인간)"
+    },
+    "SWORDSMEN": {
+      "ko": "검사"
+    },
+    "DRAGON PUPPIES": {
+      "ko": "드래곤 퍼피 (새끼용)"
+    },
+    "WEREWOLF": {
+      "ko": "웨어 울프 (늑대인간)"
+    },
+    "WEREWOLVES": {
+      "ko": "웨어 울프 (늑대인간)"
+    },
+    "LVL 4 THIEVES": {
+      "ko": "4레벨 도적"
+    },
+    "KILLER WOLVES": {
+      "ko": "킬러 울프"
+    },
+    "WERETIGER": {
+      "ko": "웨어 타이거 (호랑이인간)"
+    },
+    "WERETIGERS": {
+      "ko": "웨어 타이거 (호랑이인간)"
+    },
+    "LVL 7 THIEVES": {
+      "ko": "7레벨 도적"
+    },
+    "THIEVES": {
+      "ko": "도적"
+    },
+    "FLECK": {
+      "ko": "플랙"
+    },
+    "**W*E*R*D*N*A**": {
+      "ko": "**베*르*드*나**"
+    },
+    "MASTER THIEVES": {
+      "ko": "마스터 도적"
+    }
+  },
+  "spells": {
+    "HALITO": {
+      "ko": "할리토",
+      "class": "마법사",
+      "level": 1,
+      "type": "전투",
+      "target": "적 1체"
+    },
+    "MOGREF": {
+      "ko": "모그레프",
+      "class": "마법사",
+      "level": 1,
+      "type": "전투",
+      "target": "자신"
+    },
+    "KATINO": {
+      "ko": "카티노",
+      "class": "마법사",
+      "level": 1,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "DUMAPIC": {
+      "ko": "두마픽",
+      "class": "마법사",
+      "level": 1,
+      "type": "캠프/탐색",
+      "target": "파티"
+    },
+    "DILTO": {
+      "ko": "딜토",
+      "class": "마법사",
+      "level": 2,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "SOPIC": {
+      "ko": "소픽",
+      "class": "마법사",
+      "level": 2,
+      "type": "전투",
+      "target": "자신"
+    },
+    "MAHALITO": {
+      "ko": "마할리토",
+      "class": "마법사",
+      "level": 3,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "MOLITO": {
+      "ko": "몰리토",
+      "class": "마법사",
+      "level": 3,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "MORLIS": {
+      "ko": "몰리스",
+      "class": "마법사",
+      "level": 4,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "DALTO": {
+      "ko": "달토",
+      "class": "마법사",
+      "level": 4,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "LAHALITO": {
+      "ko": "라할리토",
+      "class": "마법사",
+      "level": 4,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "MAMORLIS": {
+      "ko": "마몰리스",
+      "class": "마법사",
+      "level": 5,
+      "type": "전투",
+      "target": "모든 적"
+    },
+    "MAKANITO": {
+      "ko": "마카니토",
+      "class": "마법사",
+      "level": 5,
+      "type": "전투",
+      "target": "모든 적"
+    },
+    "MADALTO": {
+      "ko": "마달토",
+      "class": "마법사",
+      "level": 5,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "LAKANITO": {
+      "ko": "라카니토",
+      "class": "마법사",
+      "level": 6,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "ZILWAN": {
+      "ko": "질완",
+      "class": "마법사",
+      "level": 6,
+      "type": "전투",
+      "target": "적 1체"
+    },
+    "MASOPIC": {
+      "ko": "마소픽",
+      "class": "마법사",
+      "level": 6,
+      "type": "전투",
+      "target": "파티 전체"
+    },
+    "HAMAN": {
+      "ko": "하만",
+      "class": "마법사",
+      "level": 6,
+      "type": "전투",
+      "target": "무작위"
+    },
+    "MALOR": {
+      "ko": "말로르",
+      "class": "마법사",
+      "level": 7,
+      "type": "전투/캠프",
+      "target": "파티"
+    },
+    "MAHAMAN": {
+      "ko": "마하만",
+      "class": "마법사",
+      "level": 7,
+      "type": "전투",
+      "target": "무작위"
+    },
+    "TILTOWAIT": {
+      "ko": "틸토웨이트",
+      "class": "마법사",
+      "level": 7,
+      "type": "전투",
+      "target": "적 전체"
+    },
+    "KALKI": {
+      "ko": "칼키",
+      "class": "사제",
+      "level": 1,
+      "type": "전투",
+      "target": "파티 전체"
+    },
+    "DIOS": {
+      "ko": "디오스",
+      "class": "사제",
+      "level": 1,
+      "type": "항시",
+      "target": "아군 1인"
+    },
+    "BADIOS": {
+      "ko": "바디오스",
+      "class": "사제",
+      "level": 1,
+      "type": "전투",
+      "target": "적 1체"
+    },
+    "MILWA": {
+      "ko": "밀와",
+      "class": "사제",
+      "level": 1,
+      "type": "캠프/탐색",
+      "target": "파티"
+    },
+    "PORFIC": {
+      "ko": "포르픽",
+      "class": "사제",
+      "level": 1,
+      "type": "전투",
+      "target": "자신"
+    },
+    "MATU": {
+      "ko": "마투",
+      "class": "사제",
+      "level": 2,
+      "type": "전투",
+      "target": "파티"
+    },
+    "CALFO": {
+      "ko": "칼포",
+      "class": "사제",
+      "level": 2,
+      "type": "전리품",
+      "target": "상자"
+    },
+    "MANIFO": {
+      "ko": "마니포",
+      "class": "사제",
+      "level": 2,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "MONTINO": {
+      "ko": "몬티노",
+      "class": "사제",
+      "level": 2,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "LOMILWA": {
+      "ko": "로밀와",
+      "class": "사제",
+      "level": 3,
+      "type": "캠프/탐색",
+      "target": "파티"
+    },
+    "DIALKO": {
+      "ko": "디알코",
+      "class": "사제",
+      "level": 3,
+      "type": "항시",
+      "target": "아군 1인"
+    },
+    "LATUMAPIC": {
+      "ko": "라투마픽",
+      "class": "사제",
+      "level": 3,
+      "type": "전투/캠프",
+      "target": "파티"
+    },
+    "BAMATU": {
+      "ko": "바마투",
+      "class": "사제",
+      "level": 3,
+      "type": "전투",
+      "target": "파티 전체"
+    },
+    "DIAL": {
+      "ko": "디알",
+      "class": "사제",
+      "level": 4,
+      "type": "항시",
+      "target": "아군 1인"
+    },
+    "BADIAL": {
+      "ko": "바디알",
+      "class": "사제",
+      "level": 4,
+      "type": "전투",
+      "target": "적 1체"
+    },
+    "LATUMOFIS": {
+      "ko": "라투모피스",
+      "class": "사제",
+      "level": 4,
+      "type": "항시",
+      "target": "아군 1인"
+    },
+    "MAPORFIC": {
+      "ko": "마포르픽",
+      "class": "사제",
+      "level": 4,
+      "type": "캠프/탐색",
+      "target": "파티"
+    },
+    "DIALMA": {
+      "ko": "디알마",
+      "class": "사제",
+      "level": 5,
+      "type": "항시",
+      "target": "아군 1인"
+    },
+    "BADIALMA": {
+      "ko": "바디알마",
+      "class": "사제",
+      "level": 5,
+      "type": "전투",
+      "target": "적 1체"
+    },
+    "LITOKAN": {
+      "ko": "리토칸",
+      "class": "사제",
+      "level": 5,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "KANDI": {
+      "ko": "칸디",
+      "class": "사제",
+      "level": 5,
+      "type": "캠프",
+      "target": "영혼"
+    },
+    "DI": {
+      "ko": "디",
+      "class": "사제",
+      "level": 5,
+      "type": "캠프",
+      "target": "사망자"
+    },
+    "BADI": {
+      "ko": "바디",
+      "class": "사제",
+      "level": 5,
+      "type": "전투",
+      "target": "적 1체"
+    },
+    "LORTO": {
+      "ko": "로르토",
+      "class": "사제",
+      "level": 6,
+      "type": "전투",
+      "target": "적 1그룹"
+    },
+    "MADI": {
+      "ko": "마디",
+      "class": "사제",
+      "level": 6,
+      "type": "항시",
+      "target": "아군 1인"
+    },
+    "MABADI": {
+      "ko": "마바디",
+      "class": "사제",
+      "level": 6,
+      "type": "전투",
+      "target": "적 1체"
+    },
+    "LOKTOFEIT": {
+      "ko": "로크토페이트",
+      "class": "사제",
+      "level": 6,
+      "type": "전투",
+      "target": "파티"
+    },
+    "MALIKTO": {
+      "ko": "말릭토",
+      "class": "사제",
+      "level": 7,
+      "type": "전투",
+      "target": "적 전체"
+    },
+    "KADORTO": {
+      "ko": "카도르토",
+      "class": "사제",
+      "level": 7,
+      "type": "캠프",
+      "target": "사망자/재"
+    }
+  },
+  "traps": {
+    "POISON NEEDLE": {
+      "ko": "독바늘"
+    },
+    "GAS BOMB": {
+      "ko": "가스 폭탄"
+    },
+    "CROSSBOW BOLT": {
+      "ko": "쇠뇌 화살"
+    },
+    "EXPLODING BOX": {
+      "ko": "폭발 상자"
+    },
+    "TELEPORTER": {
+      "ko": "텔레포터"
+    },
+    "MAGE BLASTER": {
+      "ko": "메이지 블래스터"
+    },
+    "PRIEST BLASTER": {
+      "ko": "프리스트 블래스터"
+    },
+    "ALARM": {
+      "ko": "경보 장치"
+    }
+  },
+  "castle": {
+    "GILGAMESH'S TAVERN": {
+      "ko": "길가메시의 선술집"
+    },
+    "BOLTAC'S TRADING POST": {
+      "ko": "볼탁 상점"
+    },
+    "TEMPLE OF CANT": {
+      "ko": "칸트 사원"
+    },
+    "ADVENTURER'S INN": {
+      "ko": "모험가의 여관"
+    },
+    "EDGE OF TOWN": {
+      "ko": "마을 외곽"
+    }
+  },
+  "items": {
+    "LONG SWORD": {
+      "ko": "롱 소드"
+    },
+    "SHORT SWORD": {
+      "ko": "쇼트 소드"
+    },
+    "ANOINTED MACE": {
+      "ko": "성유 바른 메이스"
+    },
+    "ANOINTED FLAIL": {
+      "ko": "성유 바른 플레일"
+    },
+    "STAFF": {
+      "ko": "지팡이"
+    },
+    "DAGGER": {
+      "ko": "대거"
+    },
+    "MACE": {
+      "ko": "메이스",
+      "type": "무기"
+    },
+    "FLAIL": {
+      "ko": "플레일",
+      "type": "무기"
+    },
+    "ROBES": {
+      "ko": "로브"
+    },
+    "LEATHER ARMOR": {
+      "ko": "가죽 갑옷"
+    },
+    "CHAIN MAIL": {
+      "ko": "사슬 갑옷"
+    },
+    "PLATE MAIL": {
+      "ko": "판금 갑옷"
+    },
+    "SHIELD": {
+      "ko": "소형 방패",
+      "type": "방어구"
+    },
+    "LARGE SHIELD": {
+      "ko": "대형 방패"
+    },
+    "HELM": {
+      "ko": "투구"
+    },
+    "POTION OF DIOS": {
+      "ko": "디오스 물약 (체력 회복)"
+    },
+    "POTION OF LATUMOFIS": {
+      "ko": "라투모피스 물약 (해독)"
+    },
+    "SCROLL OF KATINO": {
+      "ko": "카티노 두루마리 (수면)"
+    },
+    "COPPER GLOVES": {
+      "ko": "구리 장갑"
+    },
+    "SILVER GLOVES": {
+      "ko": "은 장갑"
+    },
+    "BLADE CUSINART": {
+      "ko": "블레이드 커시너트 (전설의 명검)"
+    },
+    "MURAMASA BLADE": {
+      "ko": "무라마사 블레이드 (최강의 도)"
+    },
+    "BROKEN ITEM": {
+      "ko": "부서진 아이템"
+    },
+    "SMALL SHIELD": {
+      "ko": "소형 방패"
+    },
+    "BREAST PLATE": {
+      "ko": "흉갑"
+    },
+    "LONG SWORD +1": {
+      "ko": "롱 소드+1"
+    },
+    "LONG SWORD+1": {
+      "ko": "롱 소드+1"
+    },
+    "SHORT SWORD +1": {
+      "ko": "쇼트 소드+1"
+    },
+    "SHORT SWORD+1": {
+      "ko": "쇼트 소드+1"
+    },
+    "MACE +1": {
+      "ko": "메이스+1"
+    },
+    "MACE+1": {
+      "ko": "메이스+1"
+    },
+    "STAFF OF MOGREF": {
+      "ko": "모그레프의 지팡이"
+    },
+    "LEATHER ARMOR +1": {
+      "ko": "가죽 갑옷+1"
+    },
+    "LEATHER+1": {
+      "ko": "가죽 갑옷+1"
+    },
+    "CHAIN MAIL +1": {
+      "ko": "사슬 갑옷+1"
+    },
+    "CHAIN+1": {
+      "ko": "사슬 갑옷+1"
+    },
+    "PLATE MAIL +1": {
+      "ko": "판금 갑옷+1"
+    },
+    "PLATE+1": {
+      "ko": "판금 갑옷+1"
+    },
+    "SHIELD +1": {
+      "ko": "방패+1"
+    },
+    "SHIELD+1": {
+      "ko": "방패+1"
+    },
+    "BREAST PLATE +1": {
+      "ko": "흉갑+1"
+    },
+    "SCROLL OF BADIOS": {
+      "ko": "바디오스 두루마리"
+    },
+    "SCROLL OF HALITO": {
+      "ko": "할리토 두루마리 (화염)"
+    },
+    "LONG SWORD -1": {
+      "ko": "롱 소드-1 (저주)"
+    },
+    "LONG SWORD-1": {
+      "ko": "롱 소드-1 (저주)"
+    },
+    "SHORT SWORD -1": {
+      "ko": "쇼트 소드-1 (저주)"
+    },
+    "SHORT SWORD-1": {
+      "ko": "쇼트 소드-1 (저주)"
+    },
+    "MACE -1": {
+      "ko": "메이스-1 (저주)"
+    },
+    "MACE-1": {
+      "ko": "메이스-1 (저주)"
+    },
+    "STAFF +2": {
+      "ko": "지팡이+2"
+    },
+    "STAFF+2": {
+      "ko": "지팡이+2"
+    },
+    "SLAYER OF DRAGONS": {
+      "ko": "드래곤 슬레이어 (용 살해검)"
+    },
+    "DRAGON SLAYER": {
+      "ko": "드래곤 슬레이어"
+    },
+    "HELM +1": {
+      "ko": "투구+1"
+    },
+    "HELM+1": {
+      "ko": "투구+1"
+    },
+    "LEATHER ARMOR -1": {
+      "ko": "가죽 갑옷-1 (저주)"
+    },
+    "LEATHER-1": {
+      "ko": "가죽 갑옷-1 (저주)"
+    },
+    "CHAIN MAIL -1": {
+      "ko": "사슬 갑옷-1 (저주)"
+    },
+    "CHAIN-1": {
+      "ko": "사슬 갑옷-1 (저주)"
+    },
+    "BREAST PLATE -1": {
+      "ko": "흉갑-1 (저주)"
+    },
+    "SHIELD -1": {
+      "ko": "방패-1 (저주)"
+    },
+    "SHIELD-1": {
+      "ko": "방패-1 (저주)"
+    },
+    "AMULET OF JEWELS": {
+      "ko": "보석의 부적"
+    },
+    "POTION OF SOPIC": {
+      "ko": "소픽 물약 (투명화)"
+    },
+    "LONG SWORD +2": {
+      "ko": "롱 소드+2"
+    },
+    "LONG SWORD+2": {
+      "ko": "롱 소드+2"
+    },
+    "SHORT SWORD +2": {
+      "ko": "쇼트 소드+2"
+    },
+    "SHORT SWORD+2": {
+      "ko": "쇼트 소드+2"
+    },
+    "MACE +2": {
+      "ko": "메이스+2"
+    },
+    "MACE+2": {
+      "ko": "메이스+2"
+    },
+    "SCROLL OF LOMILWA": {
+      "ko": "로밀와 두루마리 (빛)"
+    },
+    "SCROLL OF DILTO": {
+      "ko": "딜토 두루마리"
+    },
+    "GLOVES OF COPPER": {
+      "ko": "구리 장갑"
+    },
+    "LEATHER ARMOR +2": {
+      "ko": "가죽 갑옷+2"
+    },
+    "LEATHER+2": {
+      "ko": "가죽 갑옷+2"
+    },
+    "CHAIN MAIL +2": {
+      "ko": "사슬 갑옷+2"
+    },
+    "CHAIN+2": {
+      "ko": "사슬 갑옷+2"
+    },
+    "PLATE MAIL +2": {
+      "ko": "판금 갑옷+2"
+    },
+    "PLATE+2": {
+      "ko": "판금 갑옷+2"
+    },
+    "SHIELD +2": {
+      "ko": "방패+2"
+    },
+    "SHIELD+2": {
+      "ko": "방패+2"
+    },
+    "HELM +2": {
+      "ko": "투구+2"
+    },
+    "HELM+2": {
+      "ko": "투구+2"
+    },
+    "POTION OF DIAL": {
+      "ko": "디알 물약 (중급 회복)"
+    },
+    "RING OF PORFIC": {
+      "ko": "포르픽 반지 (보호)"
+    },
+    "WERE SLAYER": {
+      "ko": "웨어 슬레이어 (수인 살해검)"
+    },
+    "MAGE MASHER": {
+      "ko": "메이지 매셔 (마법사 격퇴검)"
+    },
+    "MACE OF POISON": {
+      "ko": "독의 메이스"
+    },
+    "STAFF OF MONTINO": {
+      "ko": "몬티노의 지팡이 (침묵)"
+    },
+    "AMULET OF MANIFO": {
+      "ko": "마니포의 부적 (마비)"
+    },
+    "ROD OF FLAME": {
+      "ko": "화염의 지팡이"
+    },
+    "EVIL CHAIN MAIL +2": {
+      "ko": "악의 사슬 갑옷+2"
+    },
+    "NEUTRAL PLATE MAIL +2": {
+      "ko": "중립의 판금 갑옷+2"
+    },
+    "EVIL SHIELD +3": {
+      "ko": "악의 방패+3"
+    },
+    "AMULET OF MAKANITO": {
+      "ko": "마카니토의 부적 (즉사)"
+    },
+    "HELM OF MALOR": {
+      "ko": "말로르의 투구 (순간이동)"
+    },
+    "SCROLL OF BADIAL": {
+      "ko": "바디알 두루마리"
+    },
+    "SHORT SWORD -2": {
+      "ko": "쇼트 소드-2 (저주)"
+    },
+    "DAGGER +2": {
+      "ko": "대거+2"
+    },
+    "DAGGER+2": {
+      "ko": "대거+2"
+    },
+    "MACE -2": {
+      "ko": "메이스-2 (저주)"
+    },
+    "STAFF -2": {
+      "ko": "지팡이-2 (저주)"
+    },
+    "DAGGER OF SPEED": {
+      "ko": "신속의 대거"
+    },
+    "ROBE OF CURSES": {
+      "ko": "저주의 로브 (저주)"
+    },
+    "LEATHER ARMOR -2": {
+      "ko": "가죽 갑옷-2 (저주)"
+    },
+    "CHAIN MAIL -2": {
+      "ko": "사슬 갑옷-2 (저주)"
+    },
+    "BREAST PLATE -2": {
+      "ko": "흉갑-2 (저주)"
+    },
+    "SHIELD -2": {
+      "ko": "방패-2 (저주)"
+    },
+    "HELM OF CURSES": {
+      "ko": "저주의 투구 (저주)"
+    },
+    "BREAST PLATE +2": {
+      "ko": "흉갑+2"
+    },
+    "GLOVES OF SILVER": {
+      "ko": "은 장갑"
+    },
+    "EVIL SWORD +3": {
+      "ko": "악의 검+3"
+    },
+    "EVIL SHORT SWORD +3": {
+      "ko": "악의 쇼트 소드+3"
+    },
+    "DAGGER OF THIEVES": {
+      "ko": "도적의 대거 (전직용)"
+    },
+    "BREAST PLATE +3": {
+      "ko": "흉갑+3"
+    },
+    "GARB OF LORDS": {
+      "ko": "로드의 갑주 (군주의 성갑)"
+    },
+    "LORDS GARB": {
+      "ko": "로드의 갑주"
+    },
+    "SHURIKENS": {
+      "ko": "수리검 (닌자 전용 암기)"
+    },
+    "COLD CHAIN MAIL": {
+      "ko": "빙결 사슬 갑옷"
+    },
+    "EVIL PLATE +3": {
+      "ko": "악의 판금 갑옷+3"
+    },
+    "SHIELD +3": {
+      "ko": "방패+3"
+    },
+    "SHIELD+3": {
+      "ko": "방패+3"
+    },
+    "RING OF HEALING": {
+      "ko": "치유의 반지 (재생)"
+    },
+    "PRIEST'S RING": {
+      "ko": "사제의 반지"
+    },
+    "RING OF DEATH": {
+      "ko": "죽음의 반지 (치명적 저주)"
+    },
+    "AMULET OF WERDNA": {
+      "ko": "베르드나의 부적 (궁극의 비보)"
+    },
+    "STATUE OF BEAR": {
+      "ko": "곰의 조각상"
+    },
+    "STATUE OF FROG": {
+      "ko": "개구리의 조각상"
+    },
+    "KEY OF BRONZE": {
+      "ko": "청동 열쇠"
+    },
+    "KEY OF SILVER": {
+      "ko": "은 열쇠"
+    },
+    "KEY OF GOLD": {
+      "ko": "황금 열쇠"
+    },
+    "BLUE RIBBON": {
+      "ko": "푸른 리본 (엘리베이터 통행증)"
+    }
+  }
+}
