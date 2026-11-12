@@ -2,7 +2,7 @@ r"""
 build.py - Wizardry_Korean_Companion PyInstaller build.
 
     python build.py            developer exe -> dist\Wizardry_Korean_Companion.exe
-    python build.py --release  release exe   -> dist\release\ (exe + README + font license)
+    python build.py --release  release exe   -> release\ (exe + README + font license)
 
 The release build sets wiz_build_flags.RELEASE = True while it builds, so the
 exe writes no developer logs or memory dumps, then puts the flag file back.
@@ -28,7 +28,7 @@ def build(release):
     spec_path = os.path.join(base_dir, 'Wizardry_Korean_Companion.spec')
     args = [spec_path, '--noconfirm']
     if release:
-        args += ['--distpath', os.path.join(base_dir, 'dist', 'release'),
+        args += ['--distpath', os.path.join(base_dir, 'release'),
                  '--workpath', os.path.join(base_dir, 'build', 'release')]
     print(f"[*] PyInstaller {'release ' if release else ''}build: {spec_path}")
     PyInstaller.__main__.run(args)
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     finally:
         with open(FLAGS, 'w', encoding='utf-8') as f:
             f.write(original)
-    out = os.path.join(base_dir, 'dist', 'release')
+    out = os.path.join(base_dir, 'release')
     # A test run of the release exe leaves its settings (local paths) and map
     # records here; the package holds only the exe and the release documents.
     keep = {'Wizardry_Korean_Companion.exe', *os.listdir(RELEASE_DOCS)}

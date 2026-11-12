@@ -20,13 +20,11 @@
 
 - Windows 10/11
 - [DOSBox 0.74-3](https://www.dosbox.com/)
-- 위저드리 1~5편 게임 파일: **Ultimate Wizardry Archives**(Interplay, 1998) 판본만 지원합니다. 아래 "필요한 게임 판본"을 보세요.
+- 위저드리 1~5편 게임 파일: **Ultimate Wizardry Archives**(Interplay, 1998) 판본이 필요합니다. 아래 "필요한 게임 판본"을 보세요.
 
 ## 필요한 게임 판본
 
-위저드리 1~5편은 지금 GOG나 Steam에서 원작 그대로 팔지 않고, 나온 판본마다 파일과 메모리 배치가 다릅니다.
-이 프로그램은 **Interplay가 1998년에 낸 합본 CD-ROM *Ultimate Wizardry Archives*에 실린 1~5편 도스판**을 기준으로 만들었습니다.
-게임 메모리와 디스크 형식을 그 판본에 맞춰 읽습니다. 다른 판본(애플 II판, 패미컴·PC-98 등 일본판, 따로 발매된 도스판, 리메이크)은 확인하지 않았고, 배치가 달라 번역과 지도가 동작하지 않을 가능성이 높습니다.
+이 프로그램은 **Interplay가 1998년에 낸 합본 CD-ROM *Ultimate Wizardry Archives*에 실린 1~5편 도스판**에서 동작합니다.
 
 위저드리 폴더에 아래 파일이 한곳에 있으면 맞는 판본입니다.
 
@@ -97,7 +95,7 @@ cd src
 python wiz_overlay.py
 ```
 
-배포용 exe는 `src`에서 `python build.py --release`로 `src\dist\release\`에 만듭니다.
+배포용 exe는 `src`에서 `python build.py --release`로 `src\release\`에 만듭니다.
 
 ## 저작권과 라이선스
 

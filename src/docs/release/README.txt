@@ -12,8 +12,7 @@ DOSBox에서 도는 PC(도스)판 위저드리 1~5편(CGA) 화면 위에 한글 
 ------
 - DOSBox 0.74-3
 - 위저드리 1~5편 게임 파일. Interplay가 1998년에 낸 합본 CD-ROM
-  "Ultimate Wizardry Archives"에 실린 도스판만 지원합니다(다른 판본은 확인하지 않았고
-  메모리 배치가 달라 동작하지 않을 가능성이 높습니다). 한 폴더에 WIZ1.COM~WIZ5.COM과
+  "Ultimate Wizardry Archives"에 실린 도스판에서 동작합니다. 한 폴더에 WIZ1.COM~WIZ5.COM과
   WIZ1.DSK~WIZ5.DSK(1~4편 327,680바이트, 5편 655,360바이트)가 있으면 맞는 판본입니다.
   게임 파일은 들어 있지 않으며, 구하는 곳도 안내하지 않습니다.
 
