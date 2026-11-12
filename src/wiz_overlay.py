@@ -3859,7 +3859,9 @@ class WizardryDualApp:
         btn = getattr(self, "btn_roll", None)
         if btn is None:
             return
-        if self._current_game() in (3, 4):
+        # Wizardry 2-4 have no character creation: the training grounds offer only
+        # I)NSPECT and R)OSTER (2 and 3 bring characters over from 1; 3 makes legacies).
+        if self._current_game() in (2, 3, 4):
             btn.config(text="캐릭터 만들기", state=tk.DISABLED, disabledforeground="#6c7086")
             return
         btn.config(state=tk.NORMAL)
@@ -3883,10 +3885,7 @@ class WizardryDualApp:
 
     def _on_roll_button(self):
         game = self._current_game()
-        if game in (3, 4):
-            return
-        if game == 2:
-            self._set_roll_note("2편 캐릭터 만들기는 준비 중입니다")
+        if game in (2, 3, 4):
             return
         roll = self._roll
         if roll.active:
