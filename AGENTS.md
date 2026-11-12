@@ -1,10 +1,12 @@
 # Wizardry 1 Korean Overlay
 
-DOSBox에서 도는 도스 위저드리 1(CGA) 위에 한글을 덮는 별도 프로세스. 게임 바이너리는 고치지 않는다. 치명적 사고와 되돌리면 안 되는 수정은 `DEVLOG.md`다.
+DOSBox에서 도는 도스 위저드리 1(CGA) 위에 한글을 덮는 별도 프로세스. 게임 바이너리는 고치지 않는다. 치명적 사고와 되돌리면 안 되는 수정은 `src\DEVLOG.md`다.
+
+저장소 루트에는 사용자용 `README.md`, 이 파일, `.gitignore`만 둔다(깃허브 첫 화면에 소스가 늘어서지 않게, 2026-11-12). 코드, 데이터, 빌드, 개발 문서와 로컬 폴더(`docs`, `tools`, `logs`, `reference`, `dict_src`, `build`, `dist`)는 모두 `src\` 아래에 있다. 아래 경로는 따로 적지 않으면 `src\` 기준이다. 사용자 배포는 깃허브 릴리스의 zip이다(exe와 `docs\release\` 문서). 새 판은 `src\dist\release\`를 `Wizardry-Korean-Companion/` 폴더째 zip으로 묶어 `gh release create`로 올린다(저장소 KCN2/Wizardry-Korean-Companion, 브랜치 main).
 
 ## 실행과 빌드
 
-- 소스: 이 디렉터리에서 `python wiz_overlay.py`
+- 소스: `src`에서 `python wiz_overlay.py`
 - exe: `Build_Wiz1_Overlay.bat`(또는 `python build.py`) → `dist\Wiz1_Korean_Overlay.exe`(개발용). 배포용은 `Build_Release.bat`(`python build.py --release`) → `dist\release\`(exe + `docs\release\`의 `README.txt`, `NeoDunggeunmo_LICENSE.txt`). 배포용 빌드 동안만 `wiz_build_flags.RELEASE = True`로 바꿨다가 되돌린다(저장소에는 늘 False). RELEASE면 `untranslated_strings.log`, `wiz_party_debug.log`, `monster_seen.log`, `wiz_maze_dump.bin`, F8 메모리 덤프를 만들지 않는다. `wiz_overlay_error.log`는 오류가 날 때만 쓰므로 둔다. 결과 exe는 `dist\` 아래뿐이다. 루트나 루트의 `release\`로 복사하지 않는다. bat은 빌드 전에 `Wiz1_Korean_Overlay`만 종료한다. DOSBox는 종료하지 않는다.
 - 이 디렉터리 소스를 바꾸면 끝내기 전에 exe를 다시 빌드한다. 이 파일은 spec에 없다.
 - spec `datas`: `wiz1_ko_data.json`, `wiz1_hashed.json`, 편별 `wiz{2..5}_*.json`, `neodgm.ttf`, `wiz_icon.ico`. 지도 데이터는 exe에 넣지 않는다(사용자의 WIZ1.DSK에서 읽는다). exe 아이콘도 `wiz_icon.ico`(spec `icon=`). 창 아이콘은 `root.iconbitmap(default=...)`로 모든 창에 준다. 아이콘은 칼이 가로로 꿰뚫은 K다(단색 빨강 #ff5555, 투명 배경, 칼 둘레는 K를 비워 띄운다. 2026-11-12. 예전 W는 타이틀 로고를 닮아 상표 문제로 바꿨다). 320px로 그려 크기마다 줄인 뒤 경계값으로 또렷하게 해 16–256 크기로 담았다. ICO는 16–128을 32비트 BMP(planes 1, AND 마스크), 256만 PNG로 직접 쓴다. Pillow 기본 저장은 모든 크기를 PNG·planes 0으로 써서 exe가 파이썬 기본 아이콘으로 보였다. spec의 `icon=`은 `SPECPATH` 기준 절대 경로다. hiddenimports: `cga_text_extractor`, `wiz_screen`, `wiz1_state`, `wiz_hook`, `wiz_build_flags`.
@@ -12,7 +14,7 @@ DOSBox에서 도는 도스 위저드리 1(CGA) 위에 한글을 덮는 별도 �
 
 ## 폴더
 
-- 루트: 실행 코드(`*.py`), 데이터(`*.json`, `neodgm.ttf`), 빌드(`build.py`, `.spec`, `.bat`). spec과 `resource_path`가 루트 기준이라 코드와 데이터는 옮기지 않는다.
+- `src\`: 실행 코드(`*.py`), 데이터(`*.json`, `neodgm.ttf`), 빌드(`build.py`, `.spec`, `.bat`). spec과 `resource_path`가 이 폴더 기준이라 코드와 데이터는 한 폴더에 둔다.
 - `docs\`와 `tools\`는 2026-11-12부터 git에 올리지 않는다(`.gitignore`). 예외는 배포 문서 `docs
 elease\`와 프로그램이 불러오는 `tools\wiz_krn_decode.py`·`tools\wiz4_krn_decode.py`뿐이다. 조사 문서, 해독본, 테스트, 보조 스크립트는 로컬에만 둔다.
 - `docs\`: 코드와 테스트가 쓰는 문서. `ASCII_KRN.md`(게임 문장 암호 형식), `wiz1_text.txt`·`wiz2_text.txt`·`wiz3_text.txt`(해독한 게임 문장 전체. 3편은 문자열 번호가 없어 둘째 칸이 비고, 물약·두루마리 이름 몇 줄은 깨져 나온다. 사전에 넣을 영문은 여기서 확인된 것으로 본다. 이 해독본들과 `wiz*_extracted_strings.txt`, `wiz4_strings.txt`, `wiz4_decoded_stream.bin`은 게임 원문 전체라 2026-11-12부터 git에 올리지 않는다(`.gitignore`). 파일은 디스크에 그대로 두고, 없으면 `tools\wiz_krn_decode.py`·`tools\wiz4_krn_decode.py`로 자기 디스크에서 다시 만든다. 이 파일을 읽는 테스트는 없으면 건너뛴다), `wiz2_investigation.md`, `character_record.md`(1~3편 캐릭터 기록 208바이트 배치. wizcheat.cpp와 대조), `wiz5_maze.md`(5편 미궁 특수 칸 형식), `wiz4_maze.md`(4편 소환 오행성 판정과 WhereAreWe 비교), `release\`(배포 README·글꼴 라이선스·오픈소스 고지 `THIRD_PARTY_NOTICES.txt`. `build.py --release`가 이 폴더 파일을 모두 dist

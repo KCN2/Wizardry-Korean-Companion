@@ -70,20 +70,21 @@ DOSBox나 이 프로그램 창이 맨 앞일 때만 동작합니다.
 
 ## 소스에서 실행하기
 
-Python 3.13과 Pillow가 필요합니다.
+Python 3.13과 Pillow가 필요합니다. 소스는 `src` 폴더에 있습니다.
 
 ```bash
 pip install pillow pyinstaller
+cd src
 python wiz_overlay.py
 ```
 
-배포용 exe는 `python build.py --release`로 `dist\release\`에 만듭니다.
+배포용 exe는 `src`에서 `python build.py --release`로 `src\dist\release\`에 만듭니다.
 
 ## 저작권과 라이선스
 
 - Wizardry는 해당 권리자의 상표이며, 게임과 그 내용(문장, 지도, 그림)의 저작권은 권리자에게 있습니다. 이 프로그램은 무료로 배포하는 비공식 팬 제작물입니다.
 - 게임 파일과 지도 데이터는 들어 있지 않습니다. 지도와 아이템 정보는 실행할 때 사용자의 게임 디스크에서 읽습니다. 화면 문장(네 낱말 이상)은 원문 대신 원문의 해시값으로 찾아 한글로 바꿉니다. 짧은 메뉴 낱말과 몬스터·아이템 이름은 화면 글자와 맞추려고 영문을 그대로 담고 있습니다.
 - 권리자의 요청이 있으면 배포를 즉시 중단합니다.
-- 한글 글꼴: [Neo둥근모](https://github.com/neodgm/neodgm) (SIL Open Font License 1.1, `docs/release/NeoDunggeunmo_LICENSE.txt`).
-- 함께 묶인 오픈소스(Python, Tcl/Tk, Pillow, PyInstaller)는 `docs/release/THIRD_PARTY_NOTICES.txt`를 보세요.
+- 한글 글꼴: [Neo둥근모](https://github.com/neodgm/neodgm) (SIL Open Font License 1.1, `src/docs/release/NeoDunggeunmo_LICENSE.txt`).
+- 함께 묶인 오픈소스(Python, Tcl/Tk, Pillow, PyInstaller)는 `src/docs/release/THIRD_PARTY_NOTICES.txt`를 보세요.
 - 게임 메모리 배치는 WhereAreWe 등 공개된 조사 자료를 참고했습니다.

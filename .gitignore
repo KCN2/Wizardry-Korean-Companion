@@ -9,8 +9,8 @@ build/
 *.iso
 *.dsk
 *.mp4
-/release-build/
-/release/
+/src/release-build/
+/src/release/
 wiz1_explored.json
 wiz2_explored.json
 wiz_overlay_error.log
@@ -21,9 +21,9 @@ logs/
 reference/
 # Development files (research notes, decoded game text, tests, helper scripts) stay
 # local. Kept: the release documents and the two decoders the program imports.
-docs/*
-!docs/release/
-tools/*
-!tools/wiz_krn_decode.py
-!tools/wiz4_krn_decode.py
+src/docs/*
+!src/docs/release/
+src/tools/*
+!src/tools/wiz_krn_decode.py
+!src/tools/wiz4_krn_decode.py
 dict_src/
