@@ -3302,7 +3302,8 @@ class WizardryDualApp:
             self._spell_follow_to = (rx + dx, ry + dy)
             win.bind("<Configure>", self._on_spell_win_configure, add="+")
             return
-        if self._user_interacting_with_window(win, "_spell_drag_active"):
+        if (self._user_interacting_with_window(win, "_spell_drag_active")
+                or getattr(self, "_spell_geometry_job", None) is not None):
             return
         if dx is not None and here and (abs(here[2] - (rx + dx)) > 2 or abs(here[3] - (ry + dy)) > 2):
             self._spell_follow_to = (rx + dx, ry + dy)
@@ -3989,7 +3990,9 @@ class WizardryDualApp:
         self._place_roll_window()
 
     def _place_roll_window(self):
-        """Stick the character dialog to the companion's bottom edge."""
+        """Keep the character dialog where the user dragged it, relative to the
+        companion (saved as roll_window [dx, dy], like the map). Without one it
+        sits under the companion's bottom edge."""
         win = getattr(self, "_roll_win", None)
         if win is None:
             return
@@ -3998,18 +4001,52 @@ class WizardryDualApp:
                 return
         except tk.TclError:
             return
+        if (self._user_interacting_with_window(win, "_roll_drag_active")
+                or getattr(self, "_roll_geometry_job", None) is not None):
+            return
         root_hwnd = self._widget_hwnd(self.root)
         rect = wintypes.RECT()
         if not root_hwnd or not user32.GetWindowRect(root_hwnd, ctypes.byref(rect)):
             return
+        saved = _load_settings().get("roll_window")
+        if (isinstance(saved, list) and len(saved) == 2 and all(isinstance(v, int) for v in saved)
+                and _on_a_monitor(int(rect.left) + saved[0] + 40, int(rect.top) + saved[1] + 10)):
+            x, y = int(rect.left) + saved[0], int(rect.top) + saved[1]
+        else:
+            x, y = int(rect.left), int(rect.bottom) + 2
+        if not getattr(win, "_roll_bound", False):
+            win._roll_bound = True
+            win.bind("<Configure>", self._on_roll_win_configure, add="+")
         win.update_idletasks()
         height = max(win.winfo_reqheight(), 1)
-        x = int(rect.left)
-        y = int(rect.bottom) + 2
         got = self._window_rect(self._widget_hwnd(win))
         if got and abs(got[0] - x) <= 2 and abs(got[1] - y) <= 2:
             return
         win.geometry(f"360x{height}+{x}+{y}")
+
+    def _on_roll_win_configure(self, event):
+        win = getattr(self, "_roll_win", None)
+        if event.widget is not win or not self._user_interacting_with_window(win, "_roll_drag_active"):
+            return
+        pending = getattr(self, "_roll_geometry_job", None)
+        if pending:
+            self.root.after_cancel(pending)
+        self._roll_geometry_job = self.root.after(300, self._save_roll_geometry)
+
+    def _save_roll_geometry(self):
+        self._roll_geometry_job = None
+        win = getattr(self, "_roll_win", None)
+        root_hwnd = self._widget_hwnd(self.root)
+        rect = wintypes.RECT()
+        try:
+            if win is None or not win.winfo_exists():
+                return
+            got = self._window_rect(self._widget_hwnd(win))
+        except tk.TclError:
+            return
+        if got and root_hwnd and user32.GetWindowRect(root_hwnd, ctypes.byref(rect)):
+            # Same frame as _place_roll_window: the companion's outer top-left.
+            _remember(roll_window=[got[0] - int(rect.left), got[1] - int(rect.top)])
 
     def _roll_poll_ms(self):
         """Up spends 35ms (30% under the old 50ms). Name letters 47ms (30% under the old 67ms). Other keys stay at 100ms."""
